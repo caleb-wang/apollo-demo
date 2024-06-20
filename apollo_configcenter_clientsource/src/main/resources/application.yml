@@ -1,0 +1,14 @@
+#app:
+#  id: 001
+#apollo:
+#  meta: http://localhost:8080
+#  bootstrap:
+#    enabled: true
+#    namespaces: dev.yml,test.properties
+
+server:
+  port: 9089
+
+spring:
+  application:
+    name: apollo-client

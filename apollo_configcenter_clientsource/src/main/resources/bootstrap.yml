@@ -1,0 +1,17 @@
+apollo:
+  meta: http://localhost:8080
+  cacheDir: F:/code/apollo_configcenter_clientsource
+  cluster: default
+  autoUpdateInjectedSpringProperties: true
+  bootstrap:
+    enabled: true
+    namespaces: application
+app:
+  id: "001"
+
+# 以下数据库信息必须得要,用来监听配置发生改变后及时更新,可以放在application.yml或者bootstrap.yml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/apolloconfigdb
+    username: root
+    password: 123456
